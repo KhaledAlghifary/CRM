@@ -61,7 +61,6 @@
 
 <div id="dateofbirth" class="md-form md-outline input-with-post-icon datepicker" inline="true">
   <input placeholder="Select date" type="date" id="dateofbirth" @class(['form-control','is-invalid'=>$errors->has('dateofbirth')])  value="{{ old('dateofbirth', isset($contact) ? $contact->dateofbirth : '') }}" name="dateofbirth">
-  <i class="fas fa-calendar input-prefix"></i>
 </div>
   </div>
 
