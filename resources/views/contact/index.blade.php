@@ -1,7 +1,6 @@
 @extends('dashboard')
 @section('content')
 
-<a href="{{route('contacts.create')}}" class="btn btn-primary">Create Contact</a>
 @if($contacts->isNotEmpty())
 
 <table class="table table-striped">
@@ -50,6 +49,8 @@
     
   </tbody>
 </table>
+    {!! $contacts->links() !!}
+
 @else
 <h1>No data yet</h1>
 @endif

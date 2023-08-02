@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contacts= auth()->user()->contacts;
+        $contacts= auth()->user()->contacts()->paginate(1);
         return view('contact.index',compact( 'contacts'));
 
     }
